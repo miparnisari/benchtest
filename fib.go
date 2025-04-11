@@ -8,7 +8,7 @@ import (
 
 var _m sync.Map
 
-// Fib returns nth Fibonnaci sequence number.
+// Fib returns nth Fibonacci sequence number.
 func Fib(n uint) uint {
 	if n <= 1 {
 		return 1
