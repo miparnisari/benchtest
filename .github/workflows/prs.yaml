@@ -48,17 +48,17 @@ jobs:
         uses: benchmark-action/github-action-benchmark@4bdcce38c94cec68da58d012ac24b7b1155efe8b # v1.20.7
         if: steps.cache.outputs.cache-hit == 'true'
         with:
-          alert-threshold: "200%"
           # What benchmark tool the output.txt came from
           tool: 'go'
           # Where the output from the benchmark tool is stored
           output-file-path: ${{ github.sha }}_bench_output.txt
-          # Where the benchmarks in master are (to compare)
+          # Where the benchmarks in main are (to compare)
           external-data-json-path: ./cache/benchmark-data.json
           # Do not save the data
           save-data-file: false
           # Workflow will fail when an alert happens
           fail-on-alert: true
+          alert-threshold: "200%"
           github-token: ${{ secrets.GITHUB_TOKEN }}
           # Enable Job Summary for PRs
           summary-always: true
@@ -71,8 +71,8 @@ jobs:
           tool: 'go'
           # Where the output from the benchmark tool is stored
           output-file-path: ${{ github.sha }}_bench_output.txt
-          # Write benchmarks to this file, do not publish to GitHub Pages
+          # Do not save the data anywhere, just publish summary
           save-data-file: false
-          external-data-json-path: ./cache/benchmark-data.json
+          external-data-json-path: "ignoreme"
           # Enable Job Summary for PRs
           summary-always: true
