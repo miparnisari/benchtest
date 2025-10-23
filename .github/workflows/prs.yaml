@@ -45,7 +45,7 @@ jobs:
           key: ${{ steps.get-main-branch-sha.outputs.sha }}-${{ runner.os }}-${{ steps.system-info.outputs.cpu-model }}-go-benchmark
 
       - name: Compare benchmarks with Main
-        uses: benchmark-action/github-action-benchmark@d48d326b4ca9ba73ca0cd0d59f108f9e02a381c7 # v1.20.4
+        uses: benchmark-action/github-action-benchmark@4bdcce38c94cec68da58d012ac24b7b1155efe8b # v1.20.7
         if: steps.cache.outputs.cache-hit == 'true'
         with:
           alert-threshold: "200%"
@@ -64,7 +64,7 @@ jobs:
           summary-always: true
 
       - name: Run benchmarks but don't compare to Main branch
-        uses: benchmark-action/github-action-benchmark@d48d326b4ca9ba73ca0cd0d59f108f9e02a381c7 # v1.20.4
+        uses: benchmark-action/github-action-benchmark@4bdcce38c94cec68da58d012ac24b7b1155efe8b # v1.20.7
         if: steps.cache.outputs.cache-hit != 'true'
         with:
           # What benchmark tool the output.txt came from
