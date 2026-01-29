@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1769726243252,
+  "lastUpdate": 1769726360535,
   "repoUrl": "https://github.com/miparnisari/benchtest",
   "entries": {
     "Benchmark": [
@@ -120,6 +120,126 @@ window.BENCHMARK_DATA = {
             "value": 0,
             "unit": "allocs/op",
             "extra": "5648 times"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "maria.ines.parnisari@authzed.com",
+            "name": "Maria Ines Parnisari",
+            "username": "miparnisari"
+          },
+          "committer": {
+            "email": "maria.ines.parnisari@authzed.com",
+            "name": "Maria Ines Parnisari",
+            "username": "miparnisari"
+          },
+          "distinct": true,
+          "id": "696d80278d0bc3b7542b219c517ca7854cb0060f",
+          "message": "make one bench worse",
+          "timestamp": "2026-01-29T19:38:41-03:00",
+          "tree_id": "9ff6bf3d5c83384ef3b585382ed9a40e46a68ab7",
+          "url": "https://github.com/miparnisari/benchtest/commit/696d80278d0bc3b7542b219c517ca7854cb0060f"
+        },
+        "date": 1769726360019,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkFib10",
+            "value": 1062866,
+            "unit": "ns/op\t       0 B/op\t       0 allocs/op",
+            "extra": "5643 times"
+          },
+          {
+            "name": "BenchmarkFib10 - ns/op",
+            "value": 1062866,
+            "unit": "ns/op",
+            "extra": "5643 times"
+          },
+          {
+            "name": "BenchmarkFib10 - B/op",
+            "value": 0,
+            "unit": "B/op",
+            "extra": "5643 times"
+          },
+          {
+            "name": "BenchmarkFib10 - allocs/op",
+            "value": 0,
+            "unit": "allocs/op",
+            "extra": "5643 times"
+          },
+          {
+            "name": "BenchmarkFib15",
+            "value": 1062925,
+            "unit": "ns/op\t       0 B/op\t       0 allocs/op",
+            "extra": "5648 times"
+          },
+          {
+            "name": "BenchmarkFib15 - ns/op",
+            "value": 1062925,
+            "unit": "ns/op",
+            "extra": "5648 times"
+          },
+          {
+            "name": "BenchmarkFib15 - B/op",
+            "value": 0,
+            "unit": "B/op",
+            "extra": "5648 times"
+          },
+          {
+            "name": "BenchmarkFib15 - allocs/op",
+            "value": 0,
+            "unit": "allocs/op",
+            "extra": "5648 times"
+          },
+          {
+            "name": "BenchmarkFib20",
+            "value": 1062906,
+            "unit": "ns/op\t       0 B/op\t       0 allocs/op",
+            "extra": "5646 times"
+          },
+          {
+            "name": "BenchmarkFib20 - ns/op",
+            "value": 1062906,
+            "unit": "ns/op",
+            "extra": "5646 times"
+          },
+          {
+            "name": "BenchmarkFib20 - B/op",
+            "value": 0,
+            "unit": "B/op",
+            "extra": "5646 times"
+          },
+          {
+            "name": "BenchmarkFib20 - allocs/op",
+            "value": 0,
+            "unit": "allocs/op",
+            "extra": "5646 times"
+          },
+          {
+            "name": "BenchmarkFib25",
+            "value": 1063261,
+            "unit": "ns/op\t       0 B/op\t       0 allocs/op",
+            "extra": "5640 times"
+          },
+          {
+            "name": "BenchmarkFib25 - ns/op",
+            "value": 1063261,
+            "unit": "ns/op",
+            "extra": "5640 times"
+          },
+          {
+            "name": "BenchmarkFib25 - B/op",
+            "value": 0,
+            "unit": "B/op",
+            "extra": "5640 times"
+          },
+          {
+            "name": "BenchmarkFib25 - allocs/op",
+            "value": 0,
+            "unit": "allocs/op",
+            "extra": "5640 times"
           }
         ]
       }
