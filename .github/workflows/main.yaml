@@ -38,6 +38,7 @@ jobs:
           fail-on-alert: true
           github-token: ${{ secrets.GITHUB_TOKEN }}
           comment-on-alert: true
+          auto-push: 'true'
 
       - name: Get CPU information
         uses: kenchan0130/actions-system-info@master
